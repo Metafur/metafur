@@ -1,0 +1,190 @@
+# Configure custom crafts, to get rid of all custom crafts delete the 'custom-crafts' section.
+custom-crafts:
+  # Name of your craft, then 1, 2, 3 for every line in the crafting table
+  # Please respect the json-item syntax! (You can use the /iteminfo command to generate this syntax.)
+  # Set limit to -1 to allow unlimited crafts, set to to a value greater than 0 to limit crafts by player
+  # You can add enchantments in the enchants list (see the war-axe example)
+  # Set default name to true to keep the default minecraft name. This means the custom crafted items will stack with other items created using default minecraft crafts.
+  # (NOTE: When default name is enabled you will not be able to use craft limit and craft permissions!)
+  'Juicy Apple':
+    '1': '{"type":"AIR"} {"type":"GOLD_INGOT"} {"type":"AIR"}'
+    '2': '{"type":"GOLD_INGOT"} {"type":"APPLE"} {"type":"GOLD_INGOT"}'
+    '3': '{"type":"AIR"} {"type":"GOLD_INGOT"} {"type":"AIR"}'
+    craft: '{"type":"GOLDEN_APPLE"}'
+    default-name: false
+    limit: 6
+
+  'Light Anvil':
+    '1': '{"type":"IRON_INGOT"} {"type":"IRON_INGOT"} {"type":"IRON_INGOT"}'
+    '2': '{"type":"AIR"} {"type":"IRON_BLOCK"} {"type":"AIR"}'
+    '3': '{"type":"IRON_INGOT"} {"type":"IRON_INGOT"} {"type":"IRON_INGOT"}'
+    craft: '{"type":"ANVIL"}'
+    default-name: true
+    limit: 2
+
+  'Sparda':
+    '1': '{"type":"AZURE_BLUET"} {"type":"BLAZE_ROD"} {"type":"NETHERITE_SCRAP"}'
+    '2': '{"type":"AIR"} {"type":"DIAMOND_SWORD"} {"type":"AIR"}'
+    '3': '{"type":"CRYING_OBSIDIAN"} {"type":"CHISELED_POLISHED_BLACKSTONE"} {"type":"CRYING_OBSIDIAN"}'
+    craft: '{"type":"DIAMOND_SWORD","enchantments":[{"type":"DAMAGE_ALL","level":4},{"type":"LOOT_BONUS_MOBS","level":2},{"type":"KNOCKBACK","level":1},{"type":"VANISHING_CURSE","level":1}]}'
+    default-name: false
+    limit: 1
+
+  'Hunters Delight':
+    '1': '{"type":"REDSTONE_BLOCK"} {"type":"STRING"} {"type":"AIR"}'
+    '2': '{"type":"REDSTONE_BLOCK"} {"type":"AIR"} {"type":"STRING"}'
+    '3': '{"type":"REDSTONE_BLOCK"} {"type":"STRING"} {"type":"AIR"}'
+    craft: '{"type":"BOW","enchantments":[{"type":"ARROW_DAMAGE","level":1}]}'
+    default-name: false
+    limit: 2
+
+  'Arrow Economy':
+    '1': '{"type":"FLINT"} {"type":"FLINT"} {"type":"FLINT"}'
+    '2': '{"type":"STICK"} {"type":"STICK"} {"type":"STICK"}'
+    '3': '{"type":"FEATHER"} {"type":"FEATHER"} {"type":"FEATHER"}'
+    craft: '{"type":"ARROW","amount":32}'
+    default-name: true
+    limit: -1
+
+  'Diadem of Kings':
+    '1': '{"type":"IRON_INGOT"} {"type":"DIAMOND"} {"type":"IRON_INGOT"}'
+    '2': '{"type":"IRON_INGOT"} {"type":"LAPIS_LAZULI"} {"type":"IRON_INGOT"}'
+    '3': '{"type":"AIR"} {"type":"NETHERRACK"} {"type":"AIR"}'
+    craft: '{"type":"IRON_HELMET","enchantments":[{"type":"WATER_WORKER","level":1},{"type":"PROTECTION_EXPLOSIONS","level":5},{"type":"PROTECTION_FIRE","level":2},{"type":"PROTECTION_PROJECTILE","level":4},{"type":"PROTECTION_ENVIRONMENTAL","level":3},{"type":"DURABILITY","level":3}],"flags":["HIDE_ATTRIBUTES"],"attributes":{"GENERIC_ARMOR_TOUGHNESS":[{"name":"generic.armor_toughness","amount":1.0,"operation":"ADD_NUMBER","slot":"HEAD"}],"GENERIC_ARMOR":[{"name":"generic.armor","amount":2.0,"operation":"ADD_NUMBER","slot":"HEAD"}]}}'
+    default-name: false
+    limit: 1
+
+  'Water Cat':
+   '1': '{"type":"DIAMOND"} {"type":"AIR"} {"type":"DIAMOND"}'
+   '2': '{"type":"WATER_BUCKET"} {"type":"DIAMOND_BOOTS"} {"type":"WATER_BUCKET"}'
+   '3': '{"type":"LAPIS_LAZULI"} {"type":"AIR"} {"type":"LAPIS_LAZULI"}'
+   craft: '{"type":"DIAMOND_BOOTS","enchantments":[{"type":"PROTECTION_ENVIRONMENTAL","level":2},{"type":"DEPTH_STRIDER","level":2},{"type":"PROTECTION_FALL","level":2},{"type":"SOUL_SPEED","level":2}]}'
+   default-name: false
+   limit: 1
+
+  'Porcupine Shell':
+   '1': '{"type":"IRON_BARS"} {"type":"CACTUS"} {"type":"IRON_BARS"}'
+   '2': '{"type":"AIR"} {"type":"IRON_BARS"} {"type":"AIR"}'
+   '3': '{"type":"IRON_BARS"} {"type":"IRON_LEGGINGS"} {"type":"IRON_BARS"}'
+   craft: '{"type":"IRON_LEGGINGS","enchantments":[{"type":"mending","level":1},{"type":"protection","level":4},{"type":"thorns","level":5},{"type":"unbreaking","level":3}]}'
+   default-name: false
+   limit: 1
+
+  'Cower Power':
+   '1': '{"type":"STICK"} {"type":"LEATHER"} {"type":"STICK"}'
+   '2': '{"type":"STICK"} {"type":"LEATHER"} {"type":"STICK"}'
+   '3': '{"type":"STICK"} {"type":"LEATHER"} {"type":"STICK"}'
+   craft: '{"type":"LEATHER","amount":6}'
+   default-name: false
+   limit: 2
+
+  'Halo Effect':
+   '1': '{"type":"OAK_SAPLING"} {"type":"WHEAT_SEEDS"} {"type":"AIR"}'
+   '2': '{"type":"BONE"} {"type":"SUGAR_CANE"} {"type":"AIR"}'
+   '3': '{"type":"AIR"} {"type":"AIR"} {"type":"AIR"}'
+   craft: '{"type":"SUGAR_CANE","amount":3}'
+   default-name: true
+   limit: 3
+
+  'Pick a Pick':
+   '1': '{"type":"AIR"} {"type":"IRON_BLOCK"} {"type":"AIR"}'
+   '2': '{"type":"AIR"} {"type":"COAL_BLOCK"} {"type":"AIR"}'
+   '3': '{"type":"AIR"} {"type":"COPPER_BLOCK"} {"type":"AIR"}'
+   craft: '{"type":"IRON_PICKAXE","enchantments":[{"type":"DIG_SPEED","level":4},{"type":"DURABILITY","level":3}]}'
+   default-name: false
+   limit: 1
+
+  'Braincell':
+   '1': '{"type":"REDSTONE_BLOCK"} {"type":"LEATHER"} {"type":"REDSTONE_BLOCK"}'
+   '2': '{"type":"AIR"} {"type":"LAPIS_LAZULI"} {"type":"AIR"}'
+   '3': '{"type":"REDSTONE_BLOCK"} {"type":"LEATHER"} {"type":"REDSTONE_BLOCK"}'
+   craft: '{"type":"EXPERIENCE_BOTTLE","amount":8}'
+   default-name: true
+   limit: -1
+
+  'Cock Transformation':
+   '1': '{"type":"AIR"} {"type":"GLOWSTONE_DUST"} {"type":"AIR"}'
+   '2': '{"type":"AIR"} {"type":"BLUE_ORCHID"} {"type":"AIR"}'
+   '3': '{"type":"AIR"} {"type":"GLOWSTONE_DUST"} {"type":"AIR"}'
+   craft: '{"type":"TIPPED_ARROW","base-effect":{"type":"SLOW_FALLING","amount":2}}'
+   default-name: false
+   limit: 4
+
+  'Premium Hoe':
+   '1': '{"type":"DIAMOND"} {"type":"CROSSBOW"} {"type":"DIAMOND"}'
+   '2': '{"type":"DIAMOND"} {"type":"STICK"} {"type":"DIAMOND"}'
+   '3': '{"type":"DIAMOND"} {"type":"LAVA_BUCKET"} {"type":"DIAMOND"}'
+   craft: '{"type":"TRIDENT","enchantments":[{"type":"LOYALTY","level":1}]}'
+   default-name: false
+   limit: 1
+
+  'Magic Truffle':
+   '1': '{"type":"GOLD_BLOCK"} {"type":"NETHER_WART"} {"type":"GOLD_BLOCK"}'
+   '2': '{"type":"HAY_BLOCK"} {"type":"GOLDEN_APPLE"} {"type":"HAY_BLOCK"}'
+   '3': '{"type":"COD"} {"type":"DIAMOND"} {"type":"COD"}'
+   craft: '{"type":"ENCHANTED_GOLDEN_APPLE"}'
+   default-name: false
+   limit: 1
+
+  '910':
+   '1': '{"type":"AIR"} {"type":"GUNPOWDER"} {"type":"AIR"}'
+   '2': '{"type":"ROTTEN_FLESH"} {"type":"AIR"} {"type":"STRING"}'
+   '3': '{"type":"AIR"} {"type":"GUNPOWDER"} {"type":"AIR"}'
+   craft: '{"type":"CREEPER_SPAWN_EGG"}'
+   default-name: false
+   limit: 5
+
+  'Repulsion':
+   '1': '{"type":"REDSTONE"} {"type":"PISTON"} {"type":"IRON_INGOT"}'
+   '2': '{"type":"PISTON"} {"type":"IRON_SWORD"} {"type":"PISTON"}'
+   '3': '{"type":"IRON_INGOT"} {"type":"PISTON"} {"type":"REDSTONE"}'
+   craft: '{"type":"IRON_SWORD","enchantments":[{"type":"KNOCKBACK","level":3}]}'
+   default-name: false
+   limit: 1
+
+  'Shield of Achilles':
+   '1': '{"type":"EMERALD"} {"type":"BLAZE_POWDER"} {"type":"EMERALD"}'
+   '2': '{"type":"DIORITE_WALL"} {"type":"ANDESITE"} {"type":"DIORITE_WALL"}'
+   '3': '{"type":"AIR"} {"type":"ANDESITE"} {"type":"AIR"}'
+   craft: '{"type":"SHIELD","attributes":{"GENERIC_MAX_HEALTH":[{"name":"generic.max_health","amount":12.0,"operation":"ADD_NUMBER","slot":"OFF_HAND"}],"GENERIC_MOVEMENT_SPEED":[{"name":"generic.movement_speed","amount":-0.2,"operation":"ADD_SCALAR","slot":"OFF_HAND"}]}}'
+   default-name: false
+   limit: 1
+
+  'Disassembled':
+   '1': '{"type":"AIR"} {"type":"AIR"} {"type":"AIR"}'
+   '2': '{"type":"AIR"} {"type":"WHITE_WOOL"} {"type":"AIR"}'
+   '3': '{"type":"AIR"} {"type":"AIR"} {"type":"AIR"}'
+   craft: '{"type":"STRING","amount":3}'
+   default-name: false
+   limit: 5
+
+  'Interwoven':
+   '1': '{"type":"AIR"} {"type":"AIR"} {"type":"AIR"}'
+   '2': '{"type":"AIR"} {"type":"WHITE_WOOL"} {"type":"AIR"}'
+   '3': '{"type":"AIR"} {"type":"STRING"} {"type":"AIR"}'
+   craft: '{"type":"COBWEB","amount":2}'
+   default-name: false
+   limit: 5
+
+  # Example of item that when crafted will revive a team member.
+  # Remove '#' symbols to enable.
+  'Team Revive':
+    '1': '{"type":"GOLD_BLOCK"} {"type":"REDSTONE_BLOCK"} {"type":"GOLD_BLOCK"}'
+    '2': '{"type":"GOLD_BLOCK"} {"type":"OBSIDIAN"} {"type":"GOLD_BLOCK"}'
+    '3': '{"type":"GOLD_BLOCK"} {"type":"REDSTONE_BLOCK"} {"type":"GOLD_BLOCK"}'
+    craft: '{"type":"NETHER_STAR","lore":["&7Open once more the gates of hell, take an ally from dead to well."]}'
+    default-name: false
+    revive-item: true
+    revive-with-inventory: false
+    limit: 3
+
+#A list of items that you don't want players to be able to craft
+# Please respect the json-item syntax! (You can use the /iteminfo command to generate this syntax.)
+# To remove all items change to "ban-items-crafts: []"
+ban-items-crafts:
+  - '{"type":"GOLDEN_APPLE","durability":1}'
+  - '{"type":"ANVIL","durability":1}'
+  - '{"type":"ARROW","durability":1}'
+  - '{"type":"END_CRYSTAL","durability":1}'
+  - '{"type":"RESPAWN_ANCHOR","durability":1}'
+  - '{"type":"GLASS_BOTTLE","durability":1}'
